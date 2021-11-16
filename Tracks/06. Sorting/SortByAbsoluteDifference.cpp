@@ -3,13 +3,14 @@
 class Solution
 {
     public:
-    void sortABS(int arr[], int n, int x)
+    void sortABS(int A[], int N, int k)
     {
-    stable_sort(arr, arr + n, [x](int a, int b)
+    stable_sort(arr, arr + n, [k](int a, int b)
     {
-        if (abs(a - x) < abs(b - x))
+        if (abs(a - k) < abs(b - k))
             return true;
         else
             return false;
-    });
-}
+    }
+                }
+};
